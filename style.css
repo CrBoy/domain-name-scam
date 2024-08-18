@@ -1,0 +1,134 @@
+:root {
+    --color-primary: #04327a;
+    --color-secondary: #fef8f1;
+    --color-dark-gray: #343a40;
+    --color-gray: #6c757d;
+    --color-light-gray: #f6f6f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav, footer {
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-gray);
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 20px 0;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.marquee {
+    background-color: var(--color-gray);
+    font-size: .7rem;
+    color: white;
+    padding: 10px 0;
+}
+/* components */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.header-nav {
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.btn {
+    background: none;
+    border: 1px solid var(--color-primary);
+    letter-spacing: .12em;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.search {
+    border: none;
+}
+
+.banner {
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.copyright {
+    font-size: .7rem;
+}
